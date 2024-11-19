@@ -250,8 +250,7 @@ Selain itu dalam grafik prediksi di bawah ini menggambarkan hasil prediksi harga
 
 ![Prediction](https://github.com/evlinzxxx/dfhbd/blob/800035f09cce12e1523e4f8d64f06ed6c18b040e/prediction.png)
 
-Keberhasilan ini menunjukkan bahwa model memiliki akurasi yang baik dalam menangkap pola tren harga emas dari data historis. Dengan demikian, model ini dapat diandalkan untuk memproyeksikan harga emas di masa depan, asalkan tren pasar dan pola perilaku harga tidak mengalami perubahan signifikan yang tidak terduga. Prediksi ini memberikan potensi bagi investor dan pelaku pasar untuk membuat keputusan yang lebih terinformasi berdasarkan proyeksi harga emas.
-
+Hasil prediksi harga emas yang ditunjukkan pada grafik tersebut mendukung relevansi dan tujuan dari problem statements dan goals. Prediksi yang akurat ini menegaskan bahwa metode Long Short-Term Memory (LSTM), yang digunakan untuk memodelkan data historis harga emas, mampu menangkap pola jangka panjang dan hubungan kompleks antar variabel ekonomi. Model ini menunjukkan potensi besar untuk diandalkan dalam memahami tren harga emas, yang dipengaruhi oleh berbagai faktor seperti inflasi, nilai tukar, dan kondisi geopolitik. Keberhasilan prediksi ini juga mencerminkan efektivitas strategi optimasi seperti Grid Search dalam meningkatkan akurasi model dengan memilih parameter yang optimal. Dengan kinerja model yang baik, sistem ini dapat memberikan nilai signifikan bagi investor sebagai alat pendukung keputusan dalam merancang strategi investasi mereka. Selain itu, analisis mendalam tentang faktor-faktor ekonomi yang memengaruhi harga emas memungkinkan investor untuk lebih siap dalam menghadapi dinamika pasar global yang kompleks dan bergejolak.
 
 **Kesimpulan**:
 **MAE (Mean Absolute Error)**:    
