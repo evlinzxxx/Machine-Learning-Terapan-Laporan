@@ -159,20 +159,20 @@ Pada tahap ini, data harga penutupan dinormalisasi ke rentang [0, 1] menggunakan
 - `scaler.fit_transform()` digunakan untuk menormalkan data dengan skala yang telah ditentukan.
 
 3. Pembagian Data Menjadi Data Latih dan Data Uji
-4. 
+
 Pada tahap ini, data dibagi menjadi dua bagian: data latih (80%) dan data uji (20%). Pembagian ini digunakan untuk melatih dan menguji model.
 - `train_size` dihitung sebagai 80% dari total data, sedangkan `test_size` adalah 20%.
 - `train_data` berisi data latih yang diambil dari `scaled_data`, sementara `test_data` adalah data uji yang mengambil 60 data terakhir dari data latih.
 
 4. Membuat Set Pelatihan
-5. 
+
 Di tahap ini, data pelatihan dipersiapkan untuk LSTM dengan struktur time-series, di mana setiap input berisi 60 waktu sebelumnya untuk memprediksi harga selanjutnya.
 - Loop dimulai dari indeks ke-60 untuk mengambil 60 waktu sebelumnya sebagai input.
 - `x_train` berisi data input yang terdiri dari 60 waktu sebelumnya, sementara `y_train` berisi nilai target (harga setelahnya).
 - Setelah loop, `x_train` dan `y_train` diubah menjadi array numpy.
 
 5. Menyesuaikan Bentuk Data untuk LSTM
-6. 
+
 LSTM memerlukan input dalam bentuk tiga dimensi, yaitu `(samples, time_steps, features)`. Oleh karena itu, data latih diubah bentuknya agar sesuai dengan format tersebut.
 - `x_train.shape[0]` adalah jumlah sampel, `x_train.shape[1]` adalah jumlah waktu (60), dan `1` adalah jumlah fitur (karena hanya menggunakan satu fitur, yaitu harga penutupan).
 - `np.reshape` digunakan untuk mengubah bentuk `x_train` menjadi tiga dimensi yang sesuai dengan input LSTM.
