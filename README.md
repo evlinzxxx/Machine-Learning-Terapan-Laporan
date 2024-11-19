@@ -30,7 +30,7 @@ Dataset ini menggunakan informasi harga emas dari tahun 2014-2024 dengan rata-ra
 
 **Penelitian Terkait**:      
 *Windha Mega Pradnya Dhuhita* : 
-"Emas adalah logam mulia yang sangat bernilai tinggi, memiliki nilai intrinsik yang signifikan dalam masyarakat modern. Oleh karena itu, semakin banyak orang yang mulai berinvestasi dalam logam mulia yang dikenal sebagai emas. Individu yang ingin berinvestasi dalam emas perlu berhati-hati dalam memantau fluktuasi harga beli dan jual logam mulia ini. Faktor-faktor utama yang memengaruhi harga tersebut meliputi perubahan harga penutupan, harga pembukaan, nilai tertinggi, dan nilai terendah emas. Fenomena yang diamati menunjukkan bahwa harga emas memiliki tingkat volatilitas yang tinggi, terutama akibat fluktuasi yang sering terjadi dan berulang. Teknik *LSTM (Long Short-Term Memory)*, yang dikombinasikan dengan optimasi hiperparameter melalui grid search, memungkinkan prediksi harga emas yang akurat menggunakan data historis harga emas." [1]
+"Emas adalah logam mulia yang sangat bernilai tinggi, memiliki nilai intrinsik yang signifikan dalam masyarakat modern. Oleh karena itu, semakin banyak orang yang mulai berinvestasi dalam logam mulia yang dikenal sebagai emas. Individu yang ingin berinvestasi dalam emas perlu berhati-hati dalam memantau fluktuasi harga beli dan jual logam mulia ini [1]. Faktor-faktor utama yang memengaruhi harga tersebut meliputi perubahan harga penutupan, harga pembukaan, nilai tertinggi, dan nilai terendah emas. Fenomena yang diamati menunjukkan bahwa harga emas memiliki tingkat volatilitas yang tinggi, terutama akibat fluktuasi yang sering terjadi dan berulang. Teknik *LSTM (Long Short-Term Memory)*, yang dikombinasikan dengan optimasi hiperparameter melalui grid search, memungkinkan prediksi harga emas yang akurat menggunakan data historis harga emas." [1]
 
 
 ## Business Understanding
@@ -247,7 +247,8 @@ Berdasarkan hasil permodelan dan evaluasi, model LSTM disimpulkan cukup baik unt
 ---
 
 **Referensi**:
-[1] Dhuhita, Windha & Farid, Muhammad & Yaqin, Ainul & Haryoko, Haryoko & Huda, Arif. (2023). Gold Price Prediction Based On Yahoo Finance Data Using Lstm Algorithm. 420-425. 10.1109/ICIMCIS60089.2023.10349035. 
+[1]([https://www.researchgate.net/publication/376547659_Gold_Price_Prediction_Based_On_Yahoo_Finance_Data_Using_Lstm_Algorithm])
+ Dhuhita, Windha & Farid, Muhammad & Yaqin, Ainul & Haryoko, Haryoko & Huda, Arif. (2023). Gold Price Prediction Based On Yahoo Finance Data Using Lstm Algorithm. 420-425. 10.1109/ICIMCIS60089.2023.10349035. 
 
 
 **---Ini adalah bagian akhir laporan---**
