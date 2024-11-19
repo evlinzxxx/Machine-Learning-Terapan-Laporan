@@ -143,30 +143,30 @@ Secara keseluruhan, data menunjukkan bahwa harga penutupan memiliki korelasi yan
 ## Data Preparation
 
 **Tahapan dalam Persiapan Data**
-1. Memilih Kolom untuk Prediksi
+##1. Memilih Kolom untuk Prediksi
 Pada tahap pertama, kolom `Close/Last` dipilih dari DataFrame (`df`) sebagai data yang akan diprediksi.
 - `df['Close/Last']` mengambil kolom "Close/Last" yang berisi harga penutupan.
 - Data tersebut kemudian diubah menjadi DataFrame (`pd.DataFrame(dataset)`).
 - `data = dataset.values` mengonversi DataFrame menjadi array numpy agar bisa digunakan dalam pemrosesan lebih lanjut.
 
-2. Normalisasi Data
+##2. Normalisasi Data
 Pada tahap ini, data harga penutupan dinormalisasi ke rentang [0, 1] menggunakan `MinMaxScaler` dari `sklearn`, yang penting untuk memastikan skala data seragam, terutama pada model berbasis jaringan saraf seperti LSTM.
 - `MinMaxScaler(feature_range=(0, 1))` menginisialisasi scaler untuk merubah data menjadi rentang antara 0 dan 1.
 - `np.array(data).reshape(-1, 1)` mengubah data menjadi array satu dimensi agar dapat dinormalisasi.
 - `scaler.fit_transform()` digunakan untuk menormalkan data dengan skala yang telah ditentukan.
 
-3. Pembagian Data Menjadi Data Latih dan Data Uji
+##3. Pembagian Data Menjadi Data Latih dan Data Uji
 Pada tahap ini, data dibagi menjadi dua bagian: data latih (80%) dan data uji (20%). Pembagian ini digunakan untuk melatih dan menguji model.
 - `train_size` dihitung sebagai 80% dari total data, sedangkan `test_size` adalah 20%.
 - `train_data` berisi data latih yang diambil dari `scaled_data`, sementara `test_data` adalah data uji yang mengambil 60 data terakhir dari data latih.
 
-4. Membuat Set Pelatihan
+##4. Membuat Set Pelatihan
 Di tahap ini, data pelatihan dipersiapkan untuk LSTM dengan struktur time-series, di mana setiap input berisi 60 waktu sebelumnya untuk memprediksi harga selanjutnya.
 - Loop dimulai dari indeks ke-60 untuk mengambil 60 waktu sebelumnya sebagai input.
 - `x_train` berisi data input yang terdiri dari 60 waktu sebelumnya, sementara `y_train` berisi nilai target (harga setelahnya).
 - Setelah loop, `x_train` dan `y_train` diubah menjadi array numpy.
 
-5. Menyesuaikan Bentuk Data untuk LSTM
+##5. Menyesuaikan Bentuk Data untuk LSTM
 LSTM memerlukan input dalam bentuk tiga dimensi, yaitu `(samples, time_steps, features)`. Oleh karena itu, data latih diubah bentuknya agar sesuai dengan format tersebut.
 - `x_train.shape[0]` adalah jumlah sampel, `x_train.shape[1]` adalah jumlah waktu (60), dan `1` adalah jumlah fitur (karena hanya menggunakan satu fitur, yaitu harga penutupan).
 - `np.reshape` digunakan untuk mengubah bentuk `x_train` menjadi tiga dimensi yang sesuai dengan input LSTM.
