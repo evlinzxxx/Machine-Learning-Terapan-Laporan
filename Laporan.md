@@ -142,11 +142,11 @@ Secara keseluruhan, data menunjukkan bahwa harga penutupan memiliki korelasi yan
 Kemudian data pada variabel Close/Last dan Open menunjukkan perkembangan harga pembukaan dan penutupan emas dari tahun 2015 hingga 2024. Secara umum, terlihat adanya tren kenaikan harga emas dalam jangka panjang. Meskipun terdapat fluktuasi, harga emas mengalami lonjakan yang signifikan terutama sekitar tahun 2020 hingga 2024. Selain itu, harga pembukaan dan penutupan terlihat sangat berdekatan, yang mengindikasikan volatilitas harian yang relatif kecil. Dengan demikian, emas dapat dianggap sebagai aset yang memiliki potensi apresiasi nilai yang stabil dalam jangka waktu yang panjang.
 
 Grafik 1 : Menampilkan korelasi antar variabel dengan heatmap
-![Heatmap](https://github.com/evlinzxxx/dfhbd/blob/3bcc00d16613991698c202e0f277ab730740e4f8/heatmap.png)
+![heatmap](https://github.com/user-attachments/assets/06176fe7-de50-46e6-b489-4bac71d2000c)
 
 Grafik 2 : Menampilkan grafik perkembangan Close/Last dan Open
-![Open and Close Relation ](https://github.com/evlinzxxx/dfhbd/blob/800035f09cce12e1523e4f8d64f06ed6c18b040e/Open%20Close%20Price.png)
-  
+![Open Close Price](https://github.com/user-attachments/assets/6a6ae5db-c02d-4034-9b4b-1d510789f6e0)
+
 
 ## Data Preparation
 
@@ -248,9 +248,9 @@ Pada data uji, model menunjukkan performa yang sangat baik dengan menghasilkan l
 
 Selain itu dalam grafik prediksi di bawah ini menggambarkan hasil prediksi harga penutupan emas menggunakan model yang dilatih dan diuji pada data historis. Garis biru menunjukkan data pelatihan (train), garis merah merepresentasikan data uji (test), dan garis kuning menunjukkan hasil prediksi model. Terlihat bahwa model mampu memprediksi harga emas dengan baik, karena garis prediksi (kuning) sangat dekat dengan data aktual (merah) pada data uji.
 
-![Prediction](https://github.com/evlinzxxx/dfhbd/blob/800035f09cce12e1523e4f8d64f06ed6c18b040e/prediction.png)
+![prediction](https://github.com/user-attachments/assets/267cc41b-a345-453f-86d0-4f4a833154dc)
 
-Hasil prediksi harga emas yang ditunjukkan pada grafik tersebut mendukung relevansi dan tujuan dari problem statements dan goals. Prediksi yang akurat ini menegaskan bahwa metode Long Short-Term Memory (LSTM), yang digunakan untuk memodelkan data historis harga emas, mampu menangkap pola jangka panjang dan hubungan kompleks antar variabel ekonomi. Model ini menunjukkan potensi besar untuk diandalkan dalam memahami tren harga emas, yang dipengaruhi oleh berbagai faktor seperti inflasi, nilai tukar, dan kondisi geopolitik. Keberhasilan prediksi ini juga mencerminkan efektivitas strategi optimasi seperti Grid Search dalam meningkatkan akurasi model dengan memilih parameter yang optimal. Dengan kinerja model yang baik, sistem ini dapat memberikan nilai signifikan bagi investor sebagai alat pendukung keputusan dalam merancang strategi investasi mereka. Selain itu, analisis mendalam tentang faktor-faktor ekonomi yang memengaruhi harga emas memungkinkan investor untuk lebih siap dalam menghadapi dinamika pasar global yang kompleks dan bergejolak.
+Hasil prediksi harga emas yang ditunjukkan pada grafik tersebut mendukung relevansi dan tujuan dari problem statements dan goals. Prediksi yang akurat ini menegaskan bahwa metode Long Short-Term Memory (LSTM), yang digunakan untuk memodelkan data historis harga emas, mampu menangkap pola jangka panjang dan hubungan kompleks antar variabel ekonomi. Model ini menunjukkan potensi besar untuk diandalkan dalam memahami tren harga emas, yang dipengaruhi oleh berbagai faktor seperti inflasi, nilai tukar, dan kondisi geopolitik. 
 
 **Kesimpulan**:
 **MAE (Mean Absolute Error)**:    
