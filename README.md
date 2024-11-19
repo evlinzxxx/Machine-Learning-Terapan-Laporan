@@ -143,7 +143,7 @@ Secara keseluruhan, data menunjukkan bahwa harga penutupan memiliki korelasi yan
 ## Data Preparation
 
 **Tahapan dalam Persiapan Data**
-### **1. Memilih Kolom untuk Prediksi**
+**1. Memilih Kolom untuk Prediksi**
 Pada tahap pertama, kolom `Close/Last` dipilih dari DataFrame (`df`) sebagai data yang akan diprediksi.
 - `df['Close/Last']` mengambil kolom "Close/Last" yang berisi harga penutupan.
 - Data tersebut kemudian diubah menjadi DataFrame (`pd.DataFrame(dataset)`).
