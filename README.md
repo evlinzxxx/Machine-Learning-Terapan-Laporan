@@ -110,7 +110,6 @@ Data columns (total 6 columns):
 |3   |Open       |2511 non-null   |float64|
 |4   |High       |2511 non-null   |float64|
 |5   |Low        |2511 non-null   |float64|
-|----|-----------|----------------|-------|
 
 dtypes: float64(5), int64(1)
 memory usage: 137.3 KB
@@ -128,7 +127,6 @@ Tabel 3 : Korelasi Antar Variabel
 | Open          | -0.914731   | 0.999135    | 1.000000    | 0.999544    | 0.999473    |
 | High          | -0.913637   | 0.999589    | 0.027213    | 1.000000    | 0.999369    |
 | Low           | -0.916239   | 0.999644    | 0.015087    | 0.999473    | 1.000000    |
-|---------------|-------------|-------------|-------------|-------------|-------------|
 
 Berikut adalah analisis korelasi antar variabel dalam dataset seperti yang ditampilkan tabel 3:
 1. Korelasi antara kolom *"Close/Last"* dan *"Open"* sangat kuat, dengan nilai korelasi mencapai 0.999135. Hal ini menunjukkan bahwa harga penutupan (Close/Last) memiliki hubungan yang hampir identik dengan harga pembukaan (Open), yang biasa terjadi di pasar saham di mana harga penutupan sebelumnya seringkali mempengaruhi harga pembukaan pada hari berikutnya.
@@ -145,29 +143,33 @@ Secara keseluruhan, data menunjukkan bahwa harga penutupan memiliki korelasi yan
 ## Data Preparation
 
 **Tahapan dalam Persiapan Data**
-1. **Impor library dan dataset**:   
-    * Tahapan ini penting karena *library Python* dan *dataset* perlu dimuat ke dalam *environment* (seperti Jupyter Notebook atau IDE lainnya) sebelum memulai analisis data.
-    * Proses: impor *library Python* seperti *pandas*, *numpy*, dan lainnya yang dibutuhkan untuk mengolah data, kemudian impor *dataset* dari sumbernya (misalnya, *file CSV*, *file XLS*, atau *database*) ke *environment*.
+### **1. Memilih Kolom untuk Prediksi**
+Pada tahap pertama, kolom `Close/Last` dipilih dari DataFrame (`df`) sebagai data yang akan diprediksi.
+- `df['Close/Last']` mengambil kolom "Close/Last" yang berisi harga penutupan.
+- Data tersebut kemudian diubah menjadi DataFrame (`pd.DataFrame(dataset)`).
+- `data = dataset.values` mengonversi DataFrame menjadi array numpy agar bisa digunakan dalam pemrosesan lebih lanjut.
 
-2. **Pemeriksaan data**:   
-    * Pemeriksaan data diperlukan untuk memahami dataset, mengidentifikasi masalah awal, dan memastikan kualitas data.
-    * Proses: melihat struktur data, menampilkan beberapa sampel data, memeriksa tipe data kolom, mengidentifikasi nilai yang hilang, dan melakukan analisis statistik deskriptif.
+### **2. Normalisasi Data**
+Pada tahap ini, data harga penutupan dinormalisasi ke rentang [0, 1] menggunakan `MinMaxScaler` dari `sklearn`, yang penting untuk memastikan skala data seragam, terutama pada model berbasis jaringan saraf seperti LSTM.
+- `MinMaxScaler(feature_range=(0, 1))` menginisialisasi scaler untuk merubah data menjadi rentang antara 0 dan 1.
+- `np.array(data).reshape(-1, 1)` mengubah data menjadi array satu dimensi agar dapat dinormalisasi.
+- `scaler.fit_transform()` digunakan untuk menormalkan data dengan skala yang telah ditentukan.
 
-3. **Eksplorasi data**:
-    * Eksplorasi data melibatkan analisis lebih mendalam terhadap dataset, termasuk visualisasi data, pemahaman distribusi data, identifikasi pola, dan analisis korelasi antar variabel.
-    * Proses: Membuat visualisasi seperti *histogram*, *scatter plot*, atau *box plot* untuk memahami distribusi dan hubungan antar variabel. Melakukan analisis statistik tambahan untuk menemukan pola atau tren yang mungkin relevan dengan tujuan analisis.
+### **3. Pembagian Data Menjadi Data Latih dan Data Uji**
+Pada tahap ini, data dibagi menjadi dua bagian: data latih (80%) dan data uji (20%). Pembagian ini digunakan untuk melatih dan menguji model.
+- `train_size` dihitung sebagai 80% dari total data, sedangkan `test_size` adalah 20%.
+- `train_data` berisi data latih yang diambil dari `scaled_data`, sementara `test_data` adalah data uji yang mengambil 60 data terakhir dari data latih.
 
-4. **Pembersihan data**:   
-    * Data seringkali memiliki nilai yang hilang, *outlier*, atau kesalahan lain yang dapat mempengaruhi hasil analisis. Tahapan ini diperlukan untuk membersihkan data dari masalah-masalah tersebut.
-    * Proses: Pembersihan data dapat melibatkan pengisian nilai yang hilang, menghapus baris atau kolom yang tidak relevan, menangani *outlier*, dan melakukan transformasi data jika diperlukan.
+### **4. Membuat Set Pelatihan**
+Di tahap ini, data pelatihan dipersiapkan untuk LSTM dengan struktur time-series, di mana setiap input berisi 60 waktu sebelumnya untuk memprediksi harga selanjutnya.
+- Loop dimulai dari indeks ke-60 untuk mengambil 60 waktu sebelumnya sebagai input.
+- `x_train` berisi data input yang terdiri dari 60 waktu sebelumnya, sementara `y_train` berisi nilai target (harga setelahnya).
+- Setelah loop, `x_train` dan `y_train` diubah menjadi array numpy.
 
-5. **Pembagian data**:   
-    * Data perlu dibagi menjadi set pelatihan (*training set*) dan set pengujian (*testing set*) untuk melatih dan menguji model machine learning.
-    * Proses: data dibagi secara acak menjadi dua bagian, misalnya 70% untuk pelatihan dan 30% untuk pengujian atau 80% untuk pelatihan dan 20% untuk pengujian. Pembagian data ini penting untuk menghindari *overfitting* (model yang terlalu cocok dengan data pelatihan) dan memastikan evaluasi yang obyektif.
-
-6. **Normalisasi data**:   
-    * Normalisasi data diperlukan ketika berbagai fitur (kolom) dalam dataset memiliki skala yang berbeda yang bisa mempengaruhi kinerja beberapa algoritma *machine learning*. Normalisasi data mengubah skala fitur-fitur sehingga nilai-nilai mereka berada dalam rentang yang serupa. Ini penting karena banyak algoritma *machine learning*, seperti *linear regression* atau *k-means clustering*, sangat sensitif terhadap skala data. Tanpa normalisasi, variabel dengan skala besar dapat mendominasi hasil analisis, sementara variabel dengan skala kecil mungkin diabaikan. Dengan normalisasi, dapat dipastikan bahwa semua variabel memiliki kontribusi yang setara dalam analisis, sehingga hasilnya lebih andal dan akurat. 
-    * Proses: Normalisasi melibatkan proses mengubah skala data. Metode yang umum digunakan termasuk *Min-Max Scaling*, *Standard Scaling*, *Z-Score Scaling*, atau menggunakan teknik seperti PCA (*Principal Component Analysis*) jika diperlukan.
+### **5. Menyesuaikan Bentuk Data untuk LSTM**
+LSTM memerlukan input dalam bentuk tiga dimensi, yaitu `(samples, time_steps, features)`. Oleh karena itu, data latih diubah bentuknya agar sesuai dengan format tersebut.
+- `x_train.shape[0]` adalah jumlah sampel, `x_train.shape[1]` adalah jumlah waktu (60), dan `1` adalah jumlah fitur (karena hanya menggunakan satu fitur, yaitu harga penutupan).
+- `np.reshape` digunakan untuk mengubah bentuk `x_train` menjadi tiga dimensi yang sesuai dengan input LSTM.
 
 
 ## Modeling
@@ -245,4 +247,6 @@ Berdasarkan hasil permodelan dan evaluasi, model LSTM disimpulkan cukup baik unt
 
 
 **---Ini adalah bagian akhir laporan---**
+
+
 
