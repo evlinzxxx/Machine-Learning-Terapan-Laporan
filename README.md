@@ -119,6 +119,7 @@ Data columns (total 6 columns):
 |3   |Open       |2511 non-null   |float64|
 |4   |High       |2511 non-null   |float64|
 |5   |Low        |2511 non-null   |float64|
+|----|-----------|----------------|-------|
 dtypes: float64(5), int64(1)
 memory usage: 137.3 KB
 
@@ -135,7 +136,7 @@ Tabel 3 : Korelasi Antar Variabel
 | Open          | -0.914731   | 0.999135    | 1.000000    | 0.999544    | 0.999473    |
 | High          | -0.913637   | 0.999589    | 0.027213    | 1.000000    | 0.999369    |
 | Low           | -0.916239   | 0.999644    | 0.015087    | 0.999473    | 1.000000    |
-+---------------+-------------+-------------+-------------+-------------+-------------+
+|---------------|-------------|-------------|-------------|-------------|-------------|
 
 Berikut adalah analisis korelasi antar variabel dalam dataset seperti yang ditampilkan tabel 3:
 1. Korelasi antara kolom *"Close/Last"* dan *"Open"* sangat kuat, dengan nilai korelasi mencapai 0.999135. Hal ini menunjukkan bahwa harga penutupan (Close/Last) memiliki hubungan yang hampir identik dengan harga pembukaan (Open), yang biasa terjadi di pasar saham di mana harga penutupan sebelumnya seringkali mempengaruhi harga pembukaan pada hari berikutnya.
