@@ -247,8 +247,9 @@ Berdasarkan hasil permodelan dan evaluasi, model LSTM disimpulkan cukup baik unt
 ---
 
 **Referensi**:
-[1]([https://www.researchgate.net/publication/376547659_Gold_Price_Prediction_Based_On_Yahoo_Finance_Data_Using_Lstm_Algorithm])
- Dhuhita, Windha & Farid, Muhammad & Yaqin, Ainul & Haryoko, Haryoko & Huda, Arif. (2023). Gold Price Prediction Based On Yahoo Finance Data Using Lstm Algorithm. 420-425. 10.1109/ICIMCIS60089.2023.10349035. 
+
+* Dhuhita, Windha & Farid, Muhammad & Yaqin, Ainul & Haryoko, Haryoko & Huda, Arif. (2023). Gold Price Prediction Based On Yahoo Finance Data Using Lstm Algorithm. 420-425. 10.1109/ICIMCIS60089.2023.10349035.  [1](https://www.researchgate.net/publication/376547659_Gold_Price_Prediction_Based_On_Yahoo_Finance_Data_Using_Lstm_Algorithm).
+ 
 
 
 **---Ini adalah bagian akhir laporan---**
