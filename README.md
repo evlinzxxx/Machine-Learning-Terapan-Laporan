@@ -142,7 +142,7 @@ Secara keseluruhan, data menunjukkan bahwa harga penutupan memiliki korelasi yan
 Kemudian data pada variabel Close/Last dan Open menunjukkan perkembangan harga pembukaan dan penutupan emas dari tahun 2015 hingga 2024. Secara umum, terlihat adanya tren kenaikan harga emas dalam jangka panjang. Meskipun terdapat fluktuasi, harga emas mengalami lonjakan yang signifikan terutama sekitar tahun 2020 hingga 2024. Selain itu, harga pembukaan dan penutupan terlihat sangat berdekatan, yang mengindikasikan volatilitas harian yang relatif kecil. Dengan demikian, emas dapat dianggap sebagai aset yang memiliki potensi apresiasi nilai yang stabil dalam jangka waktu yang panjang.
 
 Grafik 1 : Menampilkan korelasi antar variabel dengan heatmap
-![Heatmap](https://raw.githubusercontent.com/evlinzxxx/dfhbd/main/heatmap.png)
+![Heatmap](https://github.com/evlinzxxx/dfhbd/blob/3bcc00d16613991698c202e0f277ab730740e4f8/heatmap.png)
 
 Grafik 2 : Menampilkan grafik perkembangan Close/Last dan Open
 ![Open and Close Relation ](https://raw.githubusercontent.com/evlinzxxx/dfhbd/main/Open%Close%Price.png)
