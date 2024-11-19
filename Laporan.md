@@ -39,19 +39,15 @@ Dataset ini menggunakan informasi harga emas dari tahun 2014-2024 dengan rata-ra
 
 1. Emas adalah komoditas yang sangat bernilai dan serbaguna, digunakan dalam berbagai industri seperti elektronik, dirgantara, kedokteran, dan perhiasan, serta sering dijadikan alat investasi sebagai perlindungan terhadap volatilitas ekonomi. Selain sebagai logam mulia langka, emas juga berfungsi sebagai mata uang dalam transaksi ekonomi global. Harga emas dipengaruhi oleh berbagai faktor, termasuk nilai tukar dolar AS, biaya produksi, inflasi, kebijakan moneter, dan geopolitik, sehingga estimasi harga emas yang akurat sangat penting bagi investor dalam merancang strategi investasi mereka.
 
-2. Sistem prediksi diperlukan untuk memperkirakan pergerakan harga emas berdasarkan data historis, dan metode Long Short-Term Memory (LSTM) cocok digunakan karena kemampuannya memproses informasi jangka panjang dan mengenali pola kompleks serta ketergantungan antar variabel. Dalam prediksi harga emas, LSTM dapat menangani faktor makroekonomi dan tren jangka panjang yang memengaruhi harga. Untuk mengoptimalkan kinerja, penelitian ini akan menggunakan teknik Grid Search untuk mencari kombinasi parameter terbaik, seperti jumlah lapisan, unit per lapisan, dan dropout.
+2. Sistem prediksi diperlukan untuk memperkirakan pergerakan harga emas berdasarkan data historis, dan metode Long Short-Term Memory (LSTM) cocok digunakan karena kemampuannya memproses informasi jangka panjang dan mengenali pola kompleks serta ketergantungan antar variabel. Dalam prediksi harga emas, LSTM dapat menangani faktor makroekonomi dan tren jangka panjang yang memengaruhi harga. 
 
 ### Goals
 
-1. Meningkatkan kemampuan prediksi harga emas dengan menerapkan algoritma ML yang lebih adaptif, sehingga mampu menangkap dinamika pasar dengan lebih akurat dan efektif dalam berbagai kondisi ekonomi.
-    
-2. Menyediakan analisis mendalam tentang hubungan antar faktor ekonomi, seperti inflasi dan nilai tukar, yang memengaruhi harga emas, sehingga investor dapat merencanakan strategi investasi dengan lebih baik berdasarkan tren pasar.
+Meningkatkan kemampuan prediksi harga emas dengan menerapkan algoritma ML yang lebih adaptif, sehingga mampu menangkap dinamika pasar dengan lebih akurat dan efektif dalam berbagai kondisi ekonomi.
 
 ### Solution Statements
 
-1. Melatih model LSTM hingga mencapai akurasi terbaik untuk memprediksi nilai harga emas tanpa bergantung pada faktor eksternal yang tidak relevan, sehingga dapat menghasilkan prediksi yang lebih akurat dan handal dalam berbagai kondisi pasar. 
-
-2. Mengujicoba model untuk memprediksi harga emas pada tahun tertentu, dengan tujuan meningkatkan akurasi prediksi dan memberikan estimasi harga emas yang lebih tepat.
+Melatih model LSTM hingga mencapai akurasi terbaik untuk memprediksi nilai harga emas tanpa bergantung pada faktor eksternal yang tidak relevan, sehingga dapat menghasilkan prediksi yang lebih akurat dan handal dalam berbagai kondisi pasar dan mengujicoba model untuk memprediksi harga emas pada tahun tertentu, dengan tujuan meningkatkan akurasi prediksi dan memberikan estimasi harga emas yang lebih tepat.
 
 
 ## Data Understanding
