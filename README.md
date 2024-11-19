@@ -129,7 +129,7 @@ Tabel 3 : Korelasi Antar Variabel
 | Low           | -0.916239   | 0.999644    | 0.015087    | 0.999473    | 1.000000    |
 
 Berikut adalah analisis korelasi antar variabel dalam dataset seperti yang ditampilkan tabel 3:
-1. Korelasi antara kolom *"Close/Last"* dan *"Open"* sangat kuat, dengan nilai korelasi mencapai 0.999135. Hal ini menunjukkan bahwa harga penutupan (Close/Last) memiliki hubungan yang hampir identik dengan harga pembukaan (Open), yang biasa terjadi di pasar saham di mana harga penutupan sebelumnya seringkali mempengaruhi harga pembukaan pada hari berikutnya.
+1. Korelasi antara kolom *"Close/Last"* dan *"Open"* sangat kuat, dengan nilai korelasi mencapai 0.019551. Hal ini menunjukkan bahwa harga penutupan (Close/Last) memiliki hubungan yang hampir identik dengan harga pembukaan (Open), yang biasa terjadi di pasar saham di mana harga penutupan sebelumnya seringkali mempengaruhi harga pembukaan pada hari berikutnya.
 
 2. Korelasi antara *"Close/Last"* dan *"High"* serta *"Close/Last"* dan *"Low"* juga sangat tinggi, dengan nilai korelasi 0.999589 dan 0.999644, masing-masing. Ini mengindikasikan bahwa harga tertinggi (High) dan harga terendah (Low) dalam satu hari cenderung sejalan dengan harga penutupan. Hubungan ini menunjukkan bahwa pergerakan harga dalam satu periode (misalnya sehari) cukup konsisten, meskipun harga pembukaan dan penutupan bisa berbeda.
 
@@ -138,6 +138,14 @@ Berikut adalah analisis korelasi antar variabel dalam dataset seperti yang ditam
 4. Korelasi antara *"Open"*, *"High"*, dan *"Low"* menunjukkan hubungan yang sangat kuat, di atas 0.999, mengindikasikan bahwa harga pembukaan cenderung dekat dengan harga tertinggi dan terendah pada hari tersebut, yang menunjukkan volatilitas harga yang relatif kecil dalam satu periode waktu.
 
 Secara keseluruhan, data menunjukkan bahwa harga penutupan memiliki korelasi yang sangat kuat dengan harga pembukaan, tertinggi, dan terendah, sementara volume perdagangan memiliki pengaruh yang sangat terbatas terhadap pergerakan harga.
+
+Kemudian data pada variabel Close/Last dan Open menunjukkan perkembangan harga pembukaan dan penutupan emas dari tahun 2015 hingga 2024. Secara umum, terlihat adanya tren kenaikan harga emas dalam jangka panjang. Meskipun terdapat fluktuasi, harga emas mengalami lonjakan yang signifikan terutama sekitar tahun 2020 hingga 2024. Selain itu, harga pembukaan dan penutupan terlihat sangat berdekatan, yang mengindikasikan volatilitas harian yang relatif kecil. Dengan demikian, emas dapat dianggap sebagai aset yang memiliki potensi apresiasi nilai yang stabil dalam jangka waktu yang panjang.
+
+Grafik 1 : Menampilkan korelasi antar variabel dengan heatmap
+![Heatmap](https://raw.githubusercontent.com/evlinzxxx/dfhbd/main/heatmap.png)
+
+Grafik 2 : Menampilkan grafik perkembangan Close/Last dan Open
+![Open and Close Relation ](https://raw.githubusercontent.com/evlinzxxx/dfhbd/main/Open%Close%Price.png)
   
 
 ## Data Preparation
