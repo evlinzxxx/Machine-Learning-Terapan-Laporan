@@ -37,9 +37,7 @@ Dataset ini menggunakan informasi harga emas dari tahun 2014-2024 dengan rata-ra
 
 ### Problem Statements
 
-1. Emas adalah komoditas yang banyak diperdagangkan di pasar ekonomi dan mata uang global. Emas, sebagai logam mulia yang sangat serbaguna dan diminati, digunakan secara luas dalam berbagai industri, termasuk elektronik, dirgantara, kedokteran, dan perhiasan. Selain itu, emas juga sering digunakan sebagai alat investasi, berfungsi sebagai sarana bagi individu yang ingin mengalokasikan sumber daya finansial mereka secara strategis. Emas diakui secara luas sebagai logam bernilai tinggi karena sifat alaminya yang membuatnya diinginkan baik sebagai komoditas maupun sebagai bentuk mata uang. Emas memiliki karakteristik unik karena diklasifikasikan sebagai komoditas, yaitu bahan berharga yang dapat dibeli dan dijual, sekaligus sebagai logam mulia yang langka dan sangat diminati. Selain itu, emas juga berfungsi sebagai mata uang, bertindak sebagai alat tukar dalam berbagai transaksi ekonomi.
-
-Emas memiliki peran penting sebagai bahan baku dalam berbagai industri, selain penggunaannya dalam perhiasan dan penyempurnaan perhiasan. Pentingnya emas menjadikannya pilihan yang layak untuk tujuan investasi. Berdasarkan penelitian yang ada, investasi emas telah terbukti efektif sebagai pelindung terhadap volatilitas ekonomi. Harga emas memiliki peran penting dalam ekonomi global. Di saat pasar ekuitas dan obligasi sedang buruk, investor sering beralih ke emas sebagai alternatif perlindungan finansial dan tujuan investasi. Berbagai faktor, termasuk nilai tukar dolar AS, biaya produksi emas, inflasi, kebijakan moneter, dan faktor geopolitik, dapat memengaruhi fluktuasi harga emas. Estimasi harga emas yang akurat memiliki relevansi signifikan bagi investor dalam mengembangkan strategi dan kebijakan investasi mereka.
+1. Emas adalah komoditas yang sangat bernilai dan serbaguna, digunakan dalam berbagai industri seperti elektronik, dirgantara, kedokteran, dan perhiasan, serta sering dijadikan alat investasi sebagai perlindungan terhadap volatilitas ekonomi. Selain sebagai logam mulia langka, emas juga berfungsi sebagai mata uang dalam transaksi ekonomi global. Harga emas dipengaruhi oleh berbagai faktor, termasuk nilai tukar dolar AS, biaya produksi, inflasi, kebijakan moneter, dan geopolitik, sehingga estimasi harga emas yang akurat sangat penting bagi investor dalam merancang strategi investasi mereka.
 
 2. Sistem prediksi diperlukan untuk memperkirakan pergerakan harga emas berdasarkan data historis. Salah satu pendekatan yang dapat digunakan adalah metode Long Short-Term Memory (LSTM). LSTM cocok untuk memprediksi harga emas karena kemampuannya memproses informasi jangka panjang, mempelajari pola kompleks, menangani data berurutan, dan data multivariat. Dalam konteks prediksi harga emas, informasi jangka panjang sangat penting karena harga emas dipengaruhi oleh faktor makroekonomi, tren jangka panjang, dan perubahan pasar global. LSTM mampu mengenali hubungan non-linear dan ketergantungan jangka panjang antar variabel input, sehingga memberikan prediksi yang lebih akurat.
 
@@ -47,15 +45,15 @@ Model LSTM memiliki keunggulan, salah satunya adalah kemampuan untuk menyesuaika
 
 ### Goals
 
-1. Meningkatkan kemampuan prediksi harga emas dengan menerapkan algoritma ML yang lebih adaptif dan berbasis data real-time, sehingga mampu menangkap dinamika pasar dengan lebih akurat dan efektif dalam berbagai kondisi ekonomi.
+1. Meningkatkan kemampuan prediksi harga emas dengan menerapkan algoritma ML yang lebih adaptif, sehingga mampu menangkap dinamika pasar dengan lebih akurat dan efektif dalam berbagai kondisi ekonomi.
     
 2. Menyediakan analisis mendalam tentang hubungan antar faktor ekonomi, seperti inflasi dan nilai tukar, yang memengaruhi harga emas, sehingga investor dapat merencanakan strategi investasi dengan lebih baik berdasarkan tren pasar.
 
 ### Solution Statements
 
-1. Meningkatkan akurasi prediksi harga emas dengan memanfaatkan LSTM (Long Short-Term Memory), yang mampu menangkap pola data jangka panjang dan hubungan non-linear, sehingga menghasilkan proyeksi harga emas yang lebih andal untuk mendukung pengambilan keputusan investasi.  
+1. Melatih model LSTM hingga mencapai akurasi terbaik untuk memprediksi nilai harga emas tanpa bergantung pada faktor eksternal yang tidak relevan, sehingga dapat menghasilkan prediksi yang lebih akurat dan handal dalam berbagai kondisi pasar. 
 
-2. Mengoptimalkan model LSTM dengan teknik Grid Search, untuk menemukan kombinasi parameter terbaik, seperti jumlah unit, dropout, dan jumlah lapisan, sehingga meningkatkan kinerja prediksi dan memberikan estimasi harga emas yang lebih akurat.
+2. Mengujicoba model untuk memprediksi harga emas pada tahun tertentu, dengan tujuan meningkatkan akurasi prediksi dan memberikan estimasi harga emas yang lebih tepat.
 
 
 ## Data Understanding
