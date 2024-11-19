@@ -145,7 +145,7 @@ Grafik 1 : Menampilkan korelasi antar variabel dengan heatmap
 ![Heatmap](https://github.com/evlinzxxx/dfhbd/blob/3bcc00d16613991698c202e0f277ab730740e4f8/heatmap.png)
 
 Grafik 2 : Menampilkan grafik perkembangan Close/Last dan Open
-![Open and Close Relation ](https://raw.githubusercontent.com/evlinzxxx/dfhbd/main/Open%Close%Price.png)
+![Open and Close Relation ](https://github.com/evlinzxxx/dfhbd/blob/800035f09cce12e1523e4f8d64f06ed6c18b040e/Open%20Close%20Price.png)
   
 
 ## Data Preparation
@@ -245,6 +245,12 @@ Nilai *mean absolute error (MAE)* juga menurun, dengan nilai MAE terakhir pada e
 16/16 ━━━━━━━━━━━━━━━━━━━━ 0s 18ms/step
 
 Pada data uji, model menunjukkan performa yang sangat baik dengan menghasilkan loss yang sangat rendah, yaitu *1.8702e-04*, yang mengindikasikan bahwa model memiliki kemampuan untuk meminimalkan kesalahan prediksi secara efektif. Selain itu, mean absolute error (MAE) sebesar 0.0108 menunjukkan bahwa rata-rata selisih antara harga emas yang diprediksi dengan harga emas yang sebenarnya hanya sekitar *1.08%*, yang tergolong sangat akurat. Hasil ini mengindikasikan bahwa model *LSTM* yang dilatih mampu memberikan prediksi yang sangat dekat dengan nilai yang sesungguhnya, menandakan kemampuannya dalam menangkap pola dan tren dalam data harga emas secara efektif.
+
+Selain itu dalam grafik prediksi di bawah ini menggambarkan hasil prediksi harga penutupan emas menggunakan model yang dilatih dan diuji pada data historis. Garis biru menunjukkan data pelatihan (train), garis merah merepresentasikan data uji (test), dan garis kuning menunjukkan hasil prediksi model. Terlihat bahwa model mampu memprediksi harga emas dengan baik, karena garis prediksi (kuning) sangat dekat dengan data aktual (merah) pada data uji.
+
+![Prediction](https://github.com/evlinzxxx/dfhbd/blob/800035f09cce12e1523e4f8d64f06ed6c18b040e/prediction.png)
+
+Keberhasilan ini menunjukkan bahwa model memiliki akurasi yang baik dalam menangkap pola tren harga emas dari data historis. Dengan demikian, model ini dapat diandalkan untuk memproyeksikan harga emas di masa depan, asalkan tren pasar dan pola perilaku harga tidak mengalami perubahan signifikan yang tidak terduga. Prediksi ini memberikan potensi bagi investor dan pelaku pasar untuk membuat keputusan yang lebih terinformasi berdasarkan proyeksi harga emas.
 
 
 **Kesimpulan**:
