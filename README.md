@@ -39,9 +39,7 @@ Dataset ini menggunakan informasi harga emas dari tahun 2014-2024 dengan rata-ra
 
 1. Emas adalah komoditas yang sangat bernilai dan serbaguna, digunakan dalam berbagai industri seperti elektronik, dirgantara, kedokteran, dan perhiasan, serta sering dijadikan alat investasi sebagai perlindungan terhadap volatilitas ekonomi. Selain sebagai logam mulia langka, emas juga berfungsi sebagai mata uang dalam transaksi ekonomi global. Harga emas dipengaruhi oleh berbagai faktor, termasuk nilai tukar dolar AS, biaya produksi, inflasi, kebijakan moneter, dan geopolitik, sehingga estimasi harga emas yang akurat sangat penting bagi investor dalam merancang strategi investasi mereka.
 
-2. Sistem prediksi diperlukan untuk memperkirakan pergerakan harga emas berdasarkan data historis. Salah satu pendekatan yang dapat digunakan adalah metode Long Short-Term Memory (LSTM). LSTM cocok untuk memprediksi harga emas karena kemampuannya memproses informasi jangka panjang, mempelajari pola kompleks, menangani data berurutan, dan data multivariat. Dalam konteks prediksi harga emas, informasi jangka panjang sangat penting karena harga emas dipengaruhi oleh faktor makroekonomi, tren jangka panjang, dan perubahan pasar global. LSTM mampu mengenali hubungan non-linear dan ketergantungan jangka panjang antar variabel input, sehingga memberikan prediksi yang lebih akurat.
-
-Model LSTM memiliki keunggulan, salah satunya adalah kemampuan untuk menyesuaikan hyperparameter. Untuk mengoptimalkan kinerja, penelitian ini akan menggunakan teknik Grid Search guna mencari kombinasi parameter terbaik, termasuk jumlah lapisan LSTM, unit per lapisan, dan dropout, dalam rentang yang telah ditentukan.
+2. Sistem prediksi diperlukan untuk memperkirakan pergerakan harga emas berdasarkan data historis, dan metode Long Short-Term Memory (LSTM) cocok digunakan karena kemampuannya memproses informasi jangka panjang dan mengenali pola kompleks serta ketergantungan antar variabel. Dalam prediksi harga emas, LSTM dapat menangani faktor makroekonomi dan tren jangka panjang yang memengaruhi harga. Untuk mengoptimalkan kinerja, penelitian ini akan menggunakan teknik Grid Search untuk mencari kombinasi parameter terbaik, seperti jumlah lapisan, unit per lapisan, dan dropout.
 
 ### Goals
 
@@ -67,19 +65,14 @@ Berkas data ini berformat *Comma Separated Value (CSV)* dengan 2532 baris dan 6 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
 -  **Date**    
 adalah tanggal yang unik yang menjadi patokan pengukuran harga emas. Tanggal ditulis dalam format *mm/dd/yyyy*.
-
 - **Close/Last**   
 adalah harga emas pada akhir perdagangan pada tanggal yang relevan.
-
 - **Volume**   
 adalah jumlah volume perdagangan emas pada tanggal yang relevan.
-
 - **Open**    
 adalah harga emas pada awal perdagangan pada tanggal yang relevan.
-
 - **High**   
 adalah harga tertinggi yang tercatat selama perdagangan emas pada tanggal tertentu.
-
 - **Low**    
 adalah harga terendah yang tercatat selama perdagangan emas pada tanggal tertentu.
 
@@ -118,6 +111,7 @@ Data columns (total 6 columns):
 |4   |High       |2511 non-null   |float64|
 |5   |Low        |2511 non-null   |float64|
 |----|-----------|----------------|-------|
+
 dtypes: float64(5), int64(1)
 memory usage: 137.3 KB
 
