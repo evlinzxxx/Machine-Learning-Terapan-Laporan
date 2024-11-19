@@ -240,11 +240,11 @@ Nilai *mean absolute error (MAE)* juga menurun, dengan nilai MAE terakhir pada e
 
 ### Memilih model yang terbaik berdasarkan metrik evaluasi
 
-16/16 ━━━━━━━━━━━━━━━━━━━━ 1s 19ms/step - *loss*: 1.8702e-04 - *mean_absolute_error*: 0.0108
+16/16 ━━━━━━━━━━━━━━━━━━━━ 1s 19ms/step - loss: 1.7942e-04 - mean_absolute_error: 0.0108
 
-16/16 ━━━━━━━━━━━━━━━━━━━━ 0s 18ms/step
+16/16 ━━━━━━━━━━━━━━━━━━━━ 0s 16ms/step
 
-Pada data uji, model menunjukkan performa yang sangat baik dengan menghasilkan loss yang sangat rendah, yaitu *1.8702e-04*, yang mengindikasikan bahwa model memiliki kemampuan untuk meminimalkan kesalahan prediksi secara efektif. Selain itu, mean absolute error (MAE) sebesar 0.0108 menunjukkan bahwa rata-rata selisih antara harga emas yang diprediksi dengan harga emas yang sebenarnya hanya sekitar *1.08%*, yang tergolong sangat akurat. Hasil ini mengindikasikan bahwa model *LSTM* yang dilatih mampu memberikan prediksi yang sangat dekat dengan nilai yang sesungguhnya, menandakan kemampuannya dalam menangkap pola dan tren dalam data harga emas secara efektif.
+Pada data uji, model menunjukkan performa yang sangat baik dengan menghasilkan loss yang sangat rendah, yaitu *1.7942e-04*, yang mengindikasikan bahwa model memiliki kemampuan untuk meminimalkan kesalahan prediksi secara efektif. Selain itu, mean absolute error (MAE) sebesar 0.0108 menunjukkan bahwa rata-rata selisih antara harga emas yang diprediksi dengan harga emas yang sebenarnya hanya sekitar *1.08%*, yang tergolong sangat akurat. Hasil ini mengindikasikan bahwa model *LSTM* yang dilatih mampu memberikan prediksi yang sangat dekat dengan nilai yang sesungguhnya, menandakan kemampuannya dalam menangkap pola dan tren dalam data harga emas secara efektif.
 
 Selain itu dalam grafik prediksi di bawah ini menggambarkan hasil prediksi harga penutupan emas menggunakan model yang dilatih dan diuji pada data historis. Garis biru menunjukkan data pelatihan (train), garis merah merepresentasikan data uji (test), dan garis kuning menunjukkan hasil prediksi model. Terlihat bahwa model mampu memprediksi harga emas dengan baik, karena garis prediksi (kuning) sangat dekat dengan data aktual (merah) pada data uji.
 
