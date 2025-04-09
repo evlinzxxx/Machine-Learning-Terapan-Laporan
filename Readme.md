@@ -51,9 +51,8 @@ Melatih model LSTM hingga mencapai akurasi terbaik untuk memprediksi nilai harga
 
 
 ## Data Understanding
-
-*Klik link untuk download Dataset*:  
-https://www.kaggle.com/datasets/sahilwagh/gold-stock-prices
+Dataset :
+[Gold Stock Prices Dataset](https://www.kaggle.com/datasets/sahilwagh/gold-stock-prices).
 
 **Gambaran Umum Dataset**:     
 Berkas data ini berformat *Comma Separated Value (CSV)* dengan 2532 baris dan 6 kolom. Berkas ini berisi 5 kolom yang memiliki tipe data numerik, dan 1 kolom dengan tipe data tanggal. Dataset dengan jelas menampilkan nilai variabel-variabel Date, Close, Volume, Open, High, dan Low.
