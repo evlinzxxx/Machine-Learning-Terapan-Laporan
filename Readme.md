@@ -1,4 +1,4 @@
-Nama *Project* : **Gold Stock Prices Prediction**
+## Gold Stock Prices Prediction Using LSTM
 
 **Latar Belakang**:      
 Harga emas telah lama menjadi aset investasi andalan karena nilainya yang stabil dan tahan terhadap inflasi. Namun, pergerakan harga emas sangat dipengaruhi oleh berbagai faktor seperti kondisi ekonomi global, tingkat suku bunga, inflasi, dan permintaan pasar. Fluktuasi yang signifikan dalam harga emas sering menjadi tantangan bagi investor yang ingin memprediksi pergerakannya di masa depan.
