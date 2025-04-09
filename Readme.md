@@ -1,9 +1,3 @@
-# Laporan Proyek Machine Learning 
-**Evlin Sitanggang**
-
-
-## Domain Proyek
-
 Nama *Project* : **Gold Stock Prices Prediction**
 
 **Latar Belakang**:      
